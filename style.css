@@ -1,102 +1,93 @@
-* { margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 150px; 
+* { margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
     padding: 0; }
 
 body {
     background-color: white;
     color: black;
-    font: 16px Palatino;
-    border-top: 4px solid #767676;
     margin-bottom: 100px;
     overflow-y: scroll;
 }
 
-a { color: #800000; text-decoration: none;}
-a:hover { color: #8f3931; }
+a { color: #0b665c; text-decoration: none;}
+a:hover { color: #519c84; }
 
 sub {  font-size: .8em; line-height: 0; }
 sup {  font-size: .8em;  vertical-align: super;    line-height: 0; }
 
-h2,h3,h4 { font-weight: normal; }
+h1,h2,h3,h4 { font-family: "Nunito Sans";}
 
-#topbar, #bottombar {
-    padding: 0.3em 0.5em;
-    list-style-type: none;
-~    overflow: hidden;
-    font-size: 12px;
-}
-#topbar {
-    height: 60px;
-    border-top: 2px solid #767676;
-    text-align: right;
-    text-transform: lowercase;
-    line-height: 18px;
-}
-#topbar #logo { float: left; height: 80px;}
-#logo a {
-    display: block;
-    overflow: hidden;
-    text-indent: 9000px;
-    background: url(img/logo.jpg) 3px 3px no-repeat;
-    width: 220px;
-    height: 100px;
-}
-#bottombar {
-    margin-top: 15em;
-    border-bottom: 2px solid #767676;
-    list-style-type: none;
-}
-#bottombar li {
-    float: left;
-    padding-right: 7px;
-}
-#bottombar li+li { border-left: 1px solid #aaa; padding-left: 7px; }
-
-#content {
-    margin: 0 auto;
-    width: 550px;
+ul {
+    list-style: inside;
+    padding-bottom: 10px;
+        font: 16px Nunito Sans;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 70%;
 }
 
-#header {
-    margin-top: 0px;
-    text-align: center;
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0b665c;
+  font: 16px Nunito Sans;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-#header h1 { font: 34px}
-#nav {
-    list-style-type: none;
-    width: 516px;
-    margin: 20px auto;
-    overflow: hidden;
+
+.navbar li {
+  float: left;
+  font: 16px Nunito Sans
 }
-#nav a {
-    padding: 4px 0;
-    font-weight: bold;
-    margin: 0 1px;
-    border-top: 1px solid #767676;
-    border-bottom: 1px solid #767676;
-    float: left;
-    width: 170px;
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font: 16px Nunito Sans;
 }
-#nav .active a,
-#nav a:hover {
-    color: #622;
-    background: #f8f8f8;
+
+.navbar li a:hover:not(.active) {
+  background-color: #247d65;
+  font: 16px Nunito Sans;
+}
+
+.navbar .active {
+  background-color: #519c84;
+  font: 16px Nunito Sans;
 }
 
 #content>h1 {
-    text-align: center;
-    font: 18px;
-    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    color: #0b665c;
+    font: 30px Libre Baskerville;
+    font-weight: 800;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-p { margin-bottom: 10px; }
+p { padding-bottom: 10px;
+    font: 16px Nunito Sans;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 70%;
+}
 h2 {
-    text-transform: uppercase;
-    font: normal 16px;
-    text-align: center;
-    letter-spacing: 2px;
-    margin: 30px 0 25px;
+    text-align: left;
+    margin: 30px 0 10px;
+    color: #0b665c;
+    font: 20px Libre Baskerville;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 h2 a {
     color: black;
@@ -106,103 +97,3 @@ h2 a:hover {
     color: #666;
 }
 .blank h2 a { }
-
-.semester.blank .talks { display: none; }
-
-.talks { list-style-type: none; }
-.talks>li {
-    margin-bottom: 45px;
-    line-height: 20px;
-    min-height: 55px;
-}
-.talks h3 {
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-.talks h3 span { font-size: 16px; } /* institution */
-.talks h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    line-height: 25px;
-    font-style: italic;
-}
-.talks h4 a {
-    color: black;
-    outline: none;
-    padding-right: 17px;
-}
-.talks h4 a:hover {
-    color: #666;
-}
-.talks .hidden h4 a { }
-
-.meta { list-style-type: none; }
-.date {
-    float: left;
-    margin-left: -85px;
-    margin-top: -4px;
-    padding: 5px;
-    background: #f8f8f8;
-    color: #888;
-    font-size: 14px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    text-align: right;
-}
-.date b {
-    display: block;
-    font-weight: normal;
-    color: #666;
-    font-size: 16px;
-    line-height: 22px;
-}
-.meta .calendar,
-.meta .poster {
-    float: right;
-    margin: -2px 5px 0 0;
-}
-.meta .calendar a,
-.meta .poster a {
-    display: block;
-    text-indent: 9000px;
-    overflow: hidden;
-    width: 20px;
-    height: 20px;
-}
-.meta .calendar a { background: url(img/calendar-gray.gif) 0 1px no-repeat; }
-.meta .calendar a:hover { background-image: url(img/calendar.gif); }
-.meta .poster a { background: url(img/pdf-gray.gif) 0 0 no-repeat; }
-.meta .poster a:hover { background-image: url(img/pdf.gif); }
-
-.abstract p { margin-bottom: 10px; display: block; }
-.hidden .abstract { display: none; }
-
-td.special {
-   padding-left:0pt;
-}
-
-.special {
-    font-size: 14px;
-    font-style: italic;
-    color: #666;
-    margin: 0 0 10px 0px;
-}
-
-td {
-   padding-right: 10pt;
-   padding-top: 5pt;
-}
-
-td:first-of-type
-{
-  white-space: nowrap;
-}
-
-tr:nth-child(even) {background: #ddd}
-
-h3.announcement {
-   background-color: #e6cccc;
-   margin-bottom: 20pt;
-   padding: 5pt;
-}
