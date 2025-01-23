@@ -6,6 +6,8 @@
 
 body {
     background-color: white;
+    background-image: url('ko calc-2.jpg');
+    background-repeat: no-repeat;
     color: black;
     margin-bottom: 100px;
     overflow-y: scroll;
