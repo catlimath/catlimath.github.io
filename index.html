@@ -2,7 +2,10 @@
 
 <script>
   MathJax = {
-    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+    chtml: {
+            scale: 0.9
+        },
   };
   </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -11,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <title>Catherine Li</title>
 </head>
 
@@ -28,19 +31,29 @@
     <h1>Catherine Li</h1>
 
 <h2>About Me</h2>
-<p> <img src="me.jpg" alt="me" style="float:right;width:200px;padding-left:30px"> Hello! My name is Catherine Li.</p>
+<p> <img src="me.jpg" alt="me" style="float:right;width:180px;padding-left:80px; padding-bottom: 50px"> Hello!</p>
 
     <p>I'm a third-year graduate student in math at UChicago. My advisors are Allen Yuan and Akhil Mathew.</p>
 
     <p>I was previously an undergrad at Cornell. </p>
 
-<p> As of now, I like homotopy theory and K-theory. Most recently I've been learning about trace methods, but I'm not sure what my specific interests are yet!</p>
-
 <p> You can contact me at <a
 href="mailto:catli@uchicago.edu">catli@uchicago.edu</a>.</p>
 
 <h2>Notes and writing</h2>
-<p> I will upload some things here later.  </p>
+<ul>
+    <li><a
+    href="catlimath.github.io/talbot2024talk.pdf">Notes</a> for the talk "Definition of THH" at MIT Talbot, August 2024.
+    </li>
+    <li><a
+    href="catlimath.github.io/bokstedttopics.pdf">Notes</a> for my topic exam on Bökstedt periodicity, March 2024. (partially incomplete, needs revision)
+    </li>
+    <li>A <a
+    href="https://github.com/catlimath/cd-short">TeX package</a> of personal $\texttt{tikz-cd}$ shortcuts + <a
+    href="catlimath.github.io/cd-short.pdf">documentation</a>.</li>
+    <li>An <a
+    href="catlimath.github.io/kocalc2.jpg"> explicit minimal resolution</a> of $\mathbb{F}_2$ as an $\mathcal{A}(1)$ module, giving the $E_1$-page $\mathrm{Hom}_{\mathcal{A}(1)}^{*,*}(\mathbb{F}_2,\mathbb{F}_2)$ of the Adams spectral sequence computing $\pi_* ko^\wedge_2$. (This is the image at the top of the webpage.)
+</ul>
 
 <h2>Teaching</h2>
 <ul>
@@ -49,9 +62,9 @@ href="mailto:catli@uchicago.edu">catli@uchicago.edu</a>.</p>
     <li>Winter 2024: Basic Algebra II (College Fellow)
     </li>
     <li>Autumn 2023: Point Set Topology (College Fellow)</li>
-    <li>Summer 2023: REU mentor to three students</li>
+    <li>Summer 2023, 2024: REU mentor</li>
 </ul>
-  
+
 
 </div><!--content-->
 </body>
