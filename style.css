@@ -5,6 +5,10 @@
     padding: 0; }
 
 body {
+    background-image: url('kocalc.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: black;
     margin-bottom: 100px;
     overflow-y: scroll;
