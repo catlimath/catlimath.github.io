@@ -68,6 +68,10 @@ ul {
 }
 
 #content>h1 {
+    background-image: url('ko calc-2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     text-align: left;
     margin-top: 100px;
     margin-bottom: 25px;
