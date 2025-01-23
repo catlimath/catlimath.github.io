@@ -67,6 +67,16 @@ ul {
   font: 16px Nunito Sans;
 }
 
+.content {
+    background-image: url('kocalc.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 100px;
+    overflow-y: scroll;
+}
+
+
 #content>h1 {
     text-align: left;
     margin-top: 100px;
